@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Add Games</div>
+    <div class="panel-body">
+      <form class="form" method="post" ng-submit="addGame()" name="addForm">
+        <div class="form-group" ng-class="{ 'has-success' : addForm.gameName.$valid && addForm.gameName.$dirty, 'has-error' : addForm.gameName.$invalid && addForm.gameName.$dirty }">
+          <input class="form-control" type="text" name="gameName" ng-model="gameName" placeholder="Enter game name" required autofocus>
+          <div class="help-block text-danger" ng-if="addForm.gameName.$dirty" ng-messages="addForm.gameName.$error">
+            <div ng-message="required">Game name is required.</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" ng-disabled="addForm.$invalid">Add</button>
+      </form>
+    </div>
+  </div>
+</div>

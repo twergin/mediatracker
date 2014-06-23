@@ -4480,3 +4480,20 @@ em {
     float: left; }
     .navbar-nav > li > a {
       padding: 15px; }
+
+.showLink, .showLink a {
+  color: #1d7cf4;
+  margin: 0;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.showlink:hover, .showLink a:hover {
+  color: #1157bf;
+}
+
+.pageTitle {
+  text-align: center;
+  text-transform: uppercase;
+  
+}
